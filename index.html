@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>【WEB子ども教育】しろめしGAMES</title>
+  <link rel="stylesheet" href="css.styles.css">
+</head>
+<body>
+
+  <header>
+    <h1 class="header-title">しろめしGAMES</h1>
+    <nav class="gameUrl">しろめしゲームズ　>　子ども教育　＞　電卓脳トレ　＞　足し算　＞　２けた</nav>
+  </header>
+
+  <section class="container">
+    <main>
+      <fieldset class="rule">
+        <legend>ルール説明</legend>
+        <p>電卓脳トレ　/　足し算　/　２けた</p>
+        <p>電卓を使って脳トレをしよう！黄色のゾーンに数字が出るから、足し算をしてその答えと同じにしてね！
+          <br>１けたか、２けたまで入力できるよ！
+          <br>０は打てなくして、少し難しくしてあるよ！</p>
+        </fieldset>
+        <br>
+        <hr>
+          
+          
+      <section class="game">
+        <div class="game-nav">
+          <p id="questionTurn">１問目</p>
+          <p id="timer"></p>
+        </div>
+        <div class="question" id="question">
+        </div>
+            
+        <!--↓電卓↓-->
+        <div class="pad">
+              
+          <div class="screen" id="screen">
+
+          </div>
+              
+            <div class="numbers">
+              <div class="number" id="seven">7</div>      
+              <div class="number" id="eight">8</div>      
+              <div class="number" id="nine">9</div>
+              <div class="number" id="divede">÷</div>    
+              <div class="number" id="four">4</div>      
+              <div class="number" id="five">5</div>      
+              <div class="number" id="six">6</div> 
+              <div class="number" id="multiple">×</div>     
+              <div class="number" id="one">1</div>      
+              <div class="number" id="two">2</div>      
+              <div class="number" id="three">3</div>
+              <div class="number" id="subtract">-</div>
+              <div class="no-use" id="zero"></div>  
+              <!-- <div class="number" id="period">.</div>   -->
+              <div class="number" id="addition">+</div>  
+              <div class="number" id="answer">=</div>  
+            </div>
+        </div>  
+        <!-- ↑電卓↑ -->
+            
+        <div class="special">
+          <div class="reloadBtn" id="reloadBtn">やり直す</div>
+          <div class="delete" id="deleteBtn">打ち直す</div>
+        </div>
+     
+
+
+        <!-- ↓ポップアップウィンドウ↓ -->
+        <section class="startWindow" id="startWindow">
+          <p>2ケタ足し算脳トレ</p>
+          <h1>制限時間 30秒</h1>
+          <div class="startBtn" id="startBtn">スタート</div>
+        </section>
+        
+        <section class="closedResultWindow"  id="resultWindow">
+          <h1 class="resultWindowHead">終わり！</h1>
+          <h1 id="resultScore">点数 : 100点</h1>
+          <p id="resultCorrect">正解数 : 10</p>
+          <p id="resultMiss">不正解数 : 1</p>
+          <div id="restartBtn">もう一度</div>
+        </section>
+        <!-- ↑ポップアップウィンドウ↑ -->
+        
+      </section>
+          
+          
+          
+    </main>
+    <!-- ↑↓flex in containerSection -->
+    <aside>
+      <nav>
+        
+      </nav>
+    </aside>
+  </section>
+      
+  <script src="js/main.js"></script>
+</body>
+    </html>
